@@ -1,0 +1,39 @@
+.listContainer {
+    margin: 0 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .listContainer {
+        margin: 0 20px;
+    }
+}
+
+.postsListTitle {
+    margin: 20px 0 20px 50px;
+    text-align: left;
+}
+
+.postContainer {
+    text-align: left;
+    width: 100%;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.postContainer:hover {
+    transition: 0.2s;
+    background-color: rgb(249, 249, 249);
+    color: #fff !important;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.loader {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.postsListMatches{
+    text-align: left;
+}

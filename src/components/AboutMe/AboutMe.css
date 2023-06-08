@@ -1,0 +1,46 @@
+.aboutMeContainer {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 20px;
+
+    /* grid-template-rows: 250px; */ 
+}
+
+.aboutMeTitle {
+    text-align: left;
+    margin-left: 50px;
+    /* margin-bottom: 10px; */
+    /* height: auto; */
+}
+
+.aboutMeBlocks {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.aboutMeP {
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.aboutMeList {
+    text-align: left;
+    margin: 30px 30px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .aboutMeBlocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutMeList {
+        text-align: left;
+        margin: 10px 20px;
+    }
+    .aboutMeP {
+        margin: 10px 20px;
+    }
+}
