@@ -2,11 +2,8 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useState } from "react";
-import { Accordion, Card, ListGroup } from "react-bootstrap";
-import { useDispatch } from "react-redux";
-import { Link, NavLink } from "react-router-dom";
-import { useTypedSelector } from "../../../hooks/useTypedSelector";
-import { fetchCommentsAction } from "../../../redux/action-creator/actions";
+import { Accordion, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './Post.css'
 
 interface PostProps {
@@ -17,11 +14,8 @@ interface PostProps {
 }
 
 const Post = ({ id, userId, title, body }: PostProps) => {
-
     const [activeKey, setActiveKey] = useState(0);
     const [commentsPosts, setComments] = useState<any>([])
-    const dispatch = useDispatch()
-    const {comments} = useTypedSelector( state => state.state)
 
     const getComments = async () => {
       const response = await axios.get (`https://jsonplaceholder.typicode.com/comments/?postId=${id}`)

@@ -13,29 +13,6 @@
     position: relative;
 }
 
-/* .clearButtonValue {
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    right: 20px;
-    content: '';
-    width: 15px;
-    height: 15px;
-    padding: 2px;
-    background-color: rgb(227, 227, 227);
-    border-radius: 50%;
-
-} */
-
-/* .inputDiv input:focus  ~.clearButtonValue, .inputDiv input:hover  ~.clearButtonValue {
-    display: block;
-} */
-
-/* ~.inputDiv::after {
-    display: block;
-} */
-
 .searchButton {
     border-radius: 6px !important;
     margin-left: 10px !important;

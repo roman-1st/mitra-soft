@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Button, FormControl, InputGroup } from "react-bootstrap";
+import { Button, InputGroup } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import "./SearchContainer.css";
-import CloseButton from 'react-bootstrap/CloseButton';
 import { useDispatch } from "react-redux";
 import { StateActionTypes } from "../../../types/state";
 

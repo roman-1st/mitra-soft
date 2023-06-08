@@ -1,6 +1,5 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import Post from "./Post/Post";
 import "./PostsList.css";
 
@@ -9,7 +8,6 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import SearchContainer from "./SearchContainer/SearchContainer";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
-import { StateActionTypes } from "../../types/state";
 import { fetchPostsAction } from "../../redux/action-creator/actions";
 
 const PostsList = () => {

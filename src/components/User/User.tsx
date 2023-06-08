@@ -13,14 +13,12 @@ import UserPost from "./UserPost/UserPost";
 import UserPosts from "./UserPost/UserPost";
 
 const User = () => {
-  const [user, setUser] = useState<any>();
-  const [posts, setPosts] = useState<Post | undefined>();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const userId = searchParams.get("key");
 
   const dispatch = useDispatch();
-  
+
   const { userPage, userPosts, isLoading } = useTypedSelector(
     (state) => state.state
   );
@@ -33,8 +31,7 @@ const User = () => {
     navigate(-1);
   };
 
-  if (isLoading)
-    return <FontAwesomeIcon className="loader" icon={faSpinner} spin />;
+  if (isLoading) return <FontAwesomeIcon className="loader" icon={faSpinner} spin />;
 
   return (
     <div className="userPageContainer">
